@@ -15,6 +15,11 @@
          .then(data => {
             document.getElementById('navbar').innerHTML = data;
          });
+         fetch('nav/collection.html')
+         .then(response => response.text())
+         .then(data => {
+            document.getElementById('collection').innerHTML = data;
+         })
     </script>
 </head>
 <body>
@@ -27,10 +32,13 @@
                 <p>In love? We've got you! From <br> quirky backpacks to chic shoulder bags from our <br> big sister Sticky Sis, we have it all.</p>
                 <br>
                 <p>In love? We've got you! From <br> quirky backpacks to chic shoulder bags from our <br> big sister Sticky Sis, we have it all.</p>
-          
+    
             </div>
                 <img src="img/sample.avif" alt="">
         </div>
          </div>
     </section>
+    <section id="collection">
+    </section>
+   
 </html>
