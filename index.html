@@ -1,44 +1,105 @@
 <!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/hero.css">
-    <title>클로닉</title>
-    <link rel="stylesheet" href="nav/navbar.html">
-    <script src="js/jquery-3.5.1.slim.js"></script>
-    <script>
-        fetch('nav/navbar.html')
-         .then(response => response.text())
-         .then(data => {
-            document.getElementById('navbar').innerHTML = data;
-         });
-         fetch('nav/collection.html')
-         .then(response => response.text())
-         .then(data => {
-            document.getElementById('collection').innerHTML = data;
-         })
-    </script>
-</head>
-<body>
-    <div id="navbar"></div>
-    <section id="hero">
-         <div class="comp">
-            <div class="s">
-                <p>It's almost Valentine's Day! <br> Get ready for the 14th.</p>
-                <br>
-                <p>In love? We've got you! From <br> quirky backpacks to chic shoulder bags from our <br> big sister Sticky Sis, we have it all.</p>
-                <br>
-                <p>In love? We've got you! From <br> quirky backpacks to chic shoulder bags from our <br> big sister Sticky Sis, we have it all.</p>
-    
-            </div>
-                <img src="img/sample.avif" alt="">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <div class="top_utill">
+          <ul>
+            <li>회원 가입</li>
+            <li>로그인</li>
+            <li>장바구니</li>
+            <li>주문배송</li>
+            <li>고객센터</li>
+            <li>올영매장</li>
+            <li>Global</li>
+          </ul>
         </div>
-         </div>
-    </section>
-    <section id="collection">
-    </section>
-   
+        <div class="header_inner">
+          <a href=""><img src="images/h1_logo.png" alt="" /> </a>
+          <div class="search_box">
+            <input
+              class="header_search_input"
+              type="text"
+              name=""
+              id=""
+              placeholder="상품, 브랜드, 성분검색"
+            />
+            <button><i class="fa fa-search"></i></button>
+          </div>
+          <div class="header_area">
+            <ul class="menu_area">
+              <li><a href="">오늘드림</a></li>
+              <li><a href="">올영매장찾기</a></li>
+              <li><a href="">최근본상품</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="curation_wrap">
+          <div class="inner">
+            <div class="tit">
+              <strong>오늘 주목 받는 상품</strong>
+            </div>
+            <button>더보기 ></button>
+          </div>
+          <div class="curation">
+            <ul>
+              <li>
+                <a
+                  href="https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000216343&amp;dispCatNo=90000010001&amp;trackingCd=Home_Curation1_1&amp;curation=like&amp;egcode=a016_t001&amp;rccode=pc_main_01_c&amp;egrankcode=22&amp;t_page=홈&amp;t_click=큐레이션1_상품상세&amp;t_number=1"
+                  name="Home_Curation1_1"
+                  class="item a_detail"
+                  data-ref-goodsno="A000000216343"
+                  data-egrank="22"
+                  data-egcode="a016_t001"
+                  data-attr="홈^큐레이션1^[화해1위] 아누아 피디알엔 히알루론산 캡슐 100 세럼 30ml 기획 (+1ml*5ea)^1"
+                  data-impression="A000000216343^홈_큐레이션1^1"
+                  data-ref-dispcatno="90000010001"
+                  data-ref-itemno="001"
+                  tabindex="0"
+                  onclick='javascript:gtm.goods.callGoodsGtmInfo("A000000216343", "", "ee-productClick", "홈_큐레이션1", "1");common.wlog("home_curation1_prod1");common.link.moveGoodsDetailCuration("A000000216343", "90000010001","like","pc_main_01_c", "a016_t001", "22", "Home_Curation1_1");'
+                  data-impression-visibility="1"
+                  ><span class="img"
+                    ><img
+                      src="https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0021/A00000021634305ko.png?l=ko"
+                      alt="[화해1위] 아누아 피디알엔 히알루론산 캡슐 100 세럼 30ml 기획 (+1ml*5ea)"
+                      onerror="common.errorImg(this);"
+                  /></span>
+                  <div class="prd_name">
+                    <p class="tx_name">
+                      [화해1위] 아누아 피디알엔 히알루론산 캡슐 100 세럼 30ml
+                      기획 (+1ml*5ea)
+                    </p>
+                  </div>
+                  <p class="prd_price">
+                    <span class="tx_org"
+                      ><span class="tx_num">39,000</span>원 </span
+                    ><span class="tx_cur"
+                      ><span class="tx_num">25,900</span>원
+                    </span>
+                  </p>
+                  <p class="prd_flag">
+                    <span class="icon_flag sale">세일</span
+                    ><span class="icon_flag delivery">오늘드림</span>
+                  </p></a
+                >
+              </li>
+              <li>2</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
